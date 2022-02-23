@@ -155,7 +155,7 @@ ul {
     border       : 2px Solid var(--deep-gray);
     border-radius: 1.5625vh;
     box-shadow   : 0 0.390625vh 0 var(--deep-gray);
-    overflow: hidden;
+
     margin-bottom: 2.05078125vh;
     padding      : 3.3203125vh 1.66666666vw;
 }
@@ -286,6 +286,7 @@ ul {
     font-weight: 500;
 
     background: transparent;
+    border: 2px solid var(--deep-gray);
     border-radius: 1.5625vh;
 
     padding: 1.3671875vh 1.11111111vw; 
