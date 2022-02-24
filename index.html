@@ -26,8 +26,8 @@
                                 <li class="list_items">Accessibility</li>
                             </ul>
                         </div>
-                        <button class="all-featchers btn_shadow">
-                            <img src="assets/icons/heart.svg" alt="heart"> 
+                        <button class="all-featchers btn_shadow" onclick="document.getElementById('exp-trk').style.display='block'">
+                            <img src="assets/icons/heart.svg" alt="heart">
                             See All
                         </button>
                         <h3 class="title">Payments</h3>
@@ -39,7 +39,7 @@
                             </ul>
                         </div>
                         <button class="btn_shadow">
-                            <img src="assets/icons/heart.svg" alt="heart"> 
+                            <img src="assets/icons/heart.svg" alt="heart">
                             See All
                         </button>
                     </div>
@@ -123,6 +123,40 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal Section -->
+    <section class="expance_modal">
+        <div id="exp-trk" class="exp-modal">
+            <div class="exp-modal-content exp-card-4">
+                <header class="exp-container exp-teal">
+                    <span onclick="document.getElementById('exp-trk').style.display='none'"
+                        class="exp-button">&times;</span>
+                </header>
+                <div class="exp-container exp-body">
+                    <h3 class="title">Transaction Entries</h3>
+                    <div class="featchers_lists">
+                        <ul>
+                            <li class="list_items">Jan 22, 2022</li>
+                            <li class="list_items">Jan 22, 2022</li>
+                            <li class="list_items">Jan 22, 2022</li>
+                            <li class="list_items">Jan 22, 2022</li>
+                            <li class="list_items">Jan 22, 2022</li>
+                            <li class="list_items">Jan 22, 2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var modal = document.getElementById('exp-trk');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 

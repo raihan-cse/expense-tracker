@@ -324,3 +324,65 @@ ul {
 .teansitions .featchers_lists {
     padding-bottom: 5.56640625vh;
 }
+
+
+
+/* Expense Modal */
+
+.exp-modal {
+    z-index         : 3;
+    display         : none;
+    padding-top     : 30vh;
+    position        : fixed;
+    left            : 0;
+    top             : 0;
+    width           : 100vw;
+    min-height      : 100vh;
+    overflow        : auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.exp-card-4,
+.exp-hover-shadow:hover {
+    background: #fff;
+    width     : 50%;
+    height    : 50%;
+    margin    : 0 auto;
+}
+
+.exp-teal,
+.exp-hover-teal:hover {
+    color           : #fff !important;
+    background-color: #009688 !important;
+}
+
+.exp-container {
+    padding   : 0 1.11111111vh;
+    position  : relative;
+    text-align: right;
+}
+
+.exp-container.exp-body {
+    text-align: left;
+}
+
+.exp-container:after,
+.exp-container:before {
+    content: "";
+    display: table;
+    clear  : both;
+}
+
+.exp-btn,
+.exp-button {
+    border         : none;
+    display        : inline-block;
+    padding        : 0.71174377vh 0.69444444444vw;
+    overflow       : hidden;
+    text-decoration: none;
+    color          : inherit;
+    text-align     : center;
+    cursor         : pointer;
+    white-space    : nowrap;
+}
