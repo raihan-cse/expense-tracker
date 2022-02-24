@@ -18,8 +18,10 @@
                     <div class="sidebar">
                         <h2 class="trecker_header_title">EXPENSE TRACKER </h2>
 
-                        <h3 class="title">Expenses</h3>
-                        <div class="featchers_lists">
+                        <div class="title_count_wrapper">
+                            <h3 class="title">Expenses</h3>
+                        </div>
+                        <div class="featchers_lists three">
                             <ul>
                                 <li class="list_items">Display and sound</li>
                                 <li class="list_items">Data usage</li>
@@ -30,7 +32,9 @@
                             <img src="assets/icons/heart.svg" alt="heart">
                             See All
                         </button>
-                        <h3 class="title">Payments</h3>
+                        <div class="title_count_wrapper">
+                            <h3 class="title">Payments</h3>
+                        </div>
                         <div class="featchers_lists">
                             <ul>
                                 <li class="list_items">Display and sound</li>
@@ -68,15 +72,24 @@
                         </div>
                         <div class="hero_body">
                             <div class="elememts">
-                                <h2 class="element_title">ADD AN ENTRY</h2>
+                                <div class="title_input_wrapper">
+                                    <h2 class="element_title">ADD AN ENTRY</h2>
+                                    <input type="date" class="input_date">
+                                </div>
                                 <div class="hero_body_content">
 
                                     <div class="expances">
-                                        <h3 class="title">Expenses</h3>
-                                        <div class="">
+                                        <div class="title_count_wrapper">
+                                            <h3 class="title">Expenses</h3>
+                                            <div class="list_count">
+                                                <p>2</p>
+                                            </div>
+                                        </div>
+                                        <div class="list_scroller">
                                             <ul>
                                                 <li class="list_items">Display and sound</li>
                                                 <li class="list_items">Data usage</li>
+                                                <li class="list_items">Accessibility</li>
                                                 <li class="list_items">Accessibility</li>
                                             </ul>
                                             <button class="btn">
@@ -85,7 +98,12 @@
                                         </div>
                                     </div>
                                     <div class="payments">
-                                        <h3 class="title">Payments</h3>
+                                        <div class="title_count_wrapper">
+                                            <h3 class="title">Payments</h3>
+                                            <div class="list_count">
+                                                <p>5</p>
+                                            </div>
+                                        </div>
                                         <div class="">
                                             <ul>
                                                 <li class="list_items">Display and sound</li>
@@ -101,7 +119,9 @@
                                 <button class="btn_shadow">Submit</button>
                             </div>
                             <div class="teansitions">
-                                <h3 class="title">Transaction Entries</h3>
+                                <div class="title_count_wrapper">
+                                    <h3 class="title">Transaction Entries</h3>
+                                </div>
                                 <div class="featchers_lists">
                                     <ul>
                                         <li class="list_items">Jan 22, 2022</li>

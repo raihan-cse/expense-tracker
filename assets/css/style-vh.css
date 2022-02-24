@@ -120,13 +120,38 @@ ul {
 }
 
 /* ==title style== */
+.title_count_wrapper {
+    display       : flex;
+    align-items   : center;
+    padding-bottom: 1.5625vh;
+}
+
 .title {
     font-size  : 2.05078125vh;
     font-weight: 700;
     line-height: 2.734375vh;
     color      : #474A57;
+}
 
-    padding-bottom: 1.5625vh;
+.list_count {
+    width : 2.34375vh;
+    height: 2.34375vh;
+
+    border       : 2px solid var(--deep-gray);
+    border-radius: 50%;
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    margin-left: 0.83333333vw;
+}
+
+.list_count p {
+    font-size       : 1.46484375vh;
+    line-height     : 2.05078125vh;
+    font-weight     : 600;
+    /* margin-bottom: 0.1953125vh; */
 }
 
 /* ==COMMON STYLE END== */
@@ -152,6 +177,9 @@ ul {
 }
 
 .featchers_lists {
+    overflow: hidden;
+    height  : 19.7265625vh;
+
     border       : 2px Solid var(--deep-gray);
     border-radius: 1.5625vh;
     box-shadow   : 0 0.390625vh 0 var(--deep-gray);
@@ -260,6 +288,8 @@ ul {
 }
 
 .elememts {
+    height: 51.07421875vh;
+
     flex     : 0 0 66.84961580%;
     max-width: 66.84961580%;
 
@@ -267,26 +297,101 @@ ul {
     box-shadow   : 0 0.390625vh 0 #18191F;
     border-radius: 1.5625vh;
 
-    padding: 4.8828125vh 1.66666666vw 2.734375vh;
+    padding: 3.7109375vh 1.66666666vw 2.734375vh;
+}
+
+.title_input_wrapper {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+
+    margin-bottom: 3.41796875vh;
 }
 
 .elememts .element_title {
     font-size  : 3.515625vh;
     line-height: 2.734375vh;
     font-weight: 800;
-    text-align : center;
-
-    /* margin-bottom: 4.39453125vh; */
-    margin-bottom: 3.41796875vh;
 }
 
-.elememts .hero_body_content {
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /* display: none; */
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.input_date {
+    /* max-width: 12.43055555vw; */
+    max-width: 179px;
+
+    font-size  : 1.46484375vh;
+    line-height: 2.734375vh;
+    font-weight: 600;
+    text-align : center;
+
+    border       : 2px solid #18191F;
+    box-shadow   : 0 0.390625vh 0 #18191F;
+    border-radius: 1.5625vh;
+
+
+    background-image   : url(../icons/arrow-down.svg);
+    background-position: right 0.90277777vw center;
+    background-repeat  : no-repeat;
+    background-size    : 1.85546875vh 1.26953125vh;
+
+    position: relative;
+
+    padding-top: 0.390625vh;
+    padding-bottom: 0.390625vh;
+    padding-left: 0.90277777vw;
+    padding-right: 2.77777777vw;
+}
+
+.input_date::before {
+    content: 'Date:';
+    margin-right: 2px;
+}
+
+.hero_body_content {
     display        : flex;
     justify-content: space-between;
 }
 
-.elememts .title {
+.hero_body_content .expances,
+.hero_body_content .payments {
+    flex     : 0 0 50%;
+    max-width: 50%;
+}
+
+.hero_body_content .payments {
+    text-align: right;
+}
+
+.hero_body_content .payments .list_items {
+    padding-left : 0;
+    padding-right: 2.5vw;
+}
+
+.hero_body_content .payments .list_items::before {
+    right: 0;
+    left : auto;
+}
+
+.hero_body_content .title_count_wrapper {
     padding-bottom: 2.734375vh;
+}
+
+.list_scroller ul {
+    max-height: 12.890625vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    padding: 0.09765625vh 0;
+}
+
+.list_scroller ul::-webkit-scrollbar {
+    display: none;
 }
 
 .hero_body_content .btn {
@@ -318,10 +423,11 @@ ul {
     max-width: 32.82107574%;
 
     padding-left: 1.31944444vw;
-    margin-top  : 0.48828125vh;
+    margin-top  : 0.68359375vh;
 }
 
 .teansitions .featchers_lists {
+    height        : 37.5vh;
     padding-bottom: 5.56640625vh;
 }
 
