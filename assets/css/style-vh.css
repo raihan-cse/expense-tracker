@@ -15,7 +15,7 @@ html {
     --yellow   : #FFBD12;
     --deep-gray: #18191F;
     --green    : #00C6AE;
-    --white    : #fff;
+    --white    : #ffffff;
 }
 
 ul {
@@ -144,13 +144,15 @@ ul {
     justify-content: center;
     align-items    : center;
 
-    margin-left: 0.83333333vw;
+    /* margin-left: 0.83333333vw; */
+    background-color: var(--black);
 }
 
 .list_count p {
     font-size       : 1.46484375vh;
     line-height     : 2.05078125vh;
     font-weight     : 600;
+    color           : var(--white);
     /* margin-bottom: 0.1953125vh; */
 }
 
@@ -318,7 +320,7 @@ input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     /* display: none; */
     -webkit-appearance: none;
-    appearance: none;
+    appearance        : none;
 }
 
 .input_date {
@@ -342,14 +344,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     position: relative;
 
-    padding-top: 0.390625vh;
+    padding-top   : 0.390625vh;
     padding-bottom: 0.390625vh;
-    padding-left: 0.90277777vw;
-    padding-right: 2.77777777vw;
+    padding-left  : 0.90277777vw;
+    padding-right : 2.77777777vw;
 }
 
 .input_date::before {
-    content: 'Date:';
+    content     : 'Date:';
     margin-right: 2px;
 }
 
@@ -368,6 +370,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: right;
 }
 
+.hero_body_content .expances .list_count {
+    margin-left: 0.27777777vw;
+}
+
+.hero_body_content .payments .list_count {
+    margin-right: 0.27777777vw;
+}
+
 .hero_body_content .payments .list_items {
     padding-left : 0;
     padding-right: 2.5vw;
@@ -382,6 +392,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-bottom: 2.734375vh;
 }
 
+.hero_body_content .payments .title_count_wrapper {
+    justify-content: flex-end;
+}
+.list_scroller {
+    height: 23.14453125vh;
+}
 .list_scroller ul {
     max-height: 12.890625vh;
     overflow-x: hidden;
@@ -453,8 +469,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .exp-hover-shadow:hover {
     background: #fff;
     width     : 50%;
-    height    : 50%;
+    height    : auto;
+
     margin    : 0 auto;
+    border-radius: 1.5625vh;
+    overflow: hidden;
 }
 
 .exp-teal,
