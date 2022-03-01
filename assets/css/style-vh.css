@@ -597,6 +597,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 2.734375vh;
     color: #18191F;
 
+    background-repeat: no-repeat;
+    background-position: left 1.11111111vw center;
+    background-size: 2.34375vh 2.34375vh;
+
     border       : 2px solid #18191F;
     border-radius: 1.5625vh;
 
@@ -604,6 +608,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-bottom: 1.3671875vh; 
     padding-left: 3.61111111vw; 
     padding-right: 1.66666666vw; 
+}
+.form_wrapper input.email {
+    background-image: url(../icons/user.svg);
+}
+.form_wrapper input.password {
+    background-image: url(../icons/lock.svg);
 }
 .form_wrapper .submit {
     width: 100%;
