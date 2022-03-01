@@ -325,7 +325,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .input_date {
     /* max-width: 12.43055555vw; */
-    max-width: 179px;
+    /* max-width: 20.99609375vh; */
+    max-width: 14.93055555vw;
 
     font-size  : 1.46484375vh;
     line-height: 2.734375vh;
@@ -337,22 +338,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 1.5625vh;
 
 
+    /* background-image   : url(../icons/arrow-down.svg);
+    background-position: right 0.90277777vw center;
+    background-repeat  : no-repeat;
+    background-size    : 1.85546875vh 1.26953125vh; */
+
+    position: relative;
+
+    padding-top      : 0.390625vh;
+    padding-bottom   : 0.390625vh;
+    padding-left     : 0.90277777vw;
+    padding-right    : 0.90277777vw;
+    /* padding-right : 2.77777777vw; */
+}
+
+/* .input_date::-webkit-calendar-picker-indicator {
+    display: block;
+    opacity: 1;
+    width: 1.85546875vh;
+    height: 1.26953125vh;
     background-image   : url(../icons/arrow-down.svg);
     background-position: right 0.90277777vw center;
     background-repeat  : no-repeat;
     background-size    : 1.85546875vh 1.26953125vh;
-
-    position: relative;
-
-    padding-top   : 0.390625vh;
-    padding-bottom: 0.390625vh;
-    padding-left  : 0.90277777vw;
-    padding-right : 2.77777777vw;
-}
+} */
 
 .input_date::before {
     content     : 'Date:';
     margin-right: 2px;
+}
+
+.input_date:focus-visible {
+    outline: none;
 }
 
 .hero_body_content {
@@ -395,9 +412,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .hero_body_content .payments .title_count_wrapper {
     justify-content: flex-end;
 }
+
 .list_scroller {
     height: 23.14453125vh;
 }
+
 .list_scroller ul {
     max-height: 12.890625vh;
     overflow-x: hidden;
@@ -471,9 +490,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width     : 50%;
     height    : auto;
 
-    margin    : 0 auto;
+    margin       : 0 auto;
     border-radius: 1.5625vh;
-    overflow: hidden;
+    overflow     : hidden;
 }
 
 .exp-teal,
@@ -510,4 +529,99 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align     : center;
     cursor         : pointer;
     white-space    : nowrap;
+}
+
+
+/* ==login page== */
+.loin_section {
+    width   : 100vw;
+    height  : 100vh;
+    overflow: hidden;
+    position: relative;
+
+    background: #F95A2C;
+}
+
+.loin_section .avater {
+    position : absolute;
+    top      : 50%;
+    transform: translateY(-50%);
+}
+
+.loin_section .avater.rone {
+    left: 2.63888888vw;
+}
+
+.loin_section .avater.stwo {
+    right: 2.08333333vw;
+}
+
+.login_from {
+    height: 100vh;
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.login_from_inner {
+    width: 26.04166666%;
+    background   : #FFFFFF;
+    border       : 2px solid #18191F;
+    border-radius: 1.5625vh 1.5625vh 0px 0px;
+    box-shadow   : 0px -0.5859375vh 0px #18191F;
+}
+
+.form_title {
+    font-weight: 800;
+    font-size  : 2.34375vh;
+    line-height: 2.734375vh;
+    text-transform: capitalize;
+
+    border-bottom: 2px solid #18191F;
+    padding      : 1.7578125vh 1.66666666vw;
+}
+
+.form_wrapper {
+    padding: 2.34375vh 1.66666666vw 3.125vh;
+}
+.form_wrapper>*:not(:last-child) {
+    margin-bottom: 2.34375vh;
+}
+
+.form_wrapper input {
+    width: 100%;
+
+    font-weight: 500;
+    font-size  : 2.05078125vh;
+    line-height: 2.734375vh;
+    color: #18191F;
+
+    border       : 2px solid #18191F;
+    border-radius: 1.5625vh;
+
+    padding-top: 1.3671875vh; 
+    padding-bottom: 1.3671875vh; 
+    padding-left: 3.61111111vw; 
+    padding-right: 1.66666666vw; 
+}
+.form_wrapper .submit {
+    width: 100%;
+
+    font-weight: 800;
+    font-size  : 2.05078125vh;
+    line-height: 2.734375vh;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: capitalize;
+
+    background-color: #18191F;
+    border-radius: 1.5625vh;
+
+    padding: 1.5625vh 1.66666666vw;
+}
+.form_wrapper .submit>svg {
+    width: 2.34375vh;
+    height: 2.34375vh;
+    vertical-align: text-bottom;
 }
