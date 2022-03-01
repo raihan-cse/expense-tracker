@@ -484,25 +484,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.exp-card-4,
-.exp-hover-shadow:hover {
+.exp-card-4 {
     background: #fff;
     width     : 50%;
     height    : auto;
 
     margin       : 0 auto;
     border-radius: 1.5625vh;
-    overflow     : hidden;
+    /* overflow     : hidden; */
+
+    position: relative;
 }
 
-.exp-teal,
-.exp-hover-teal:hover {
-    color           : #fff !important;
-    background-color: #009688 !important;
-}
 
 .exp-container {
-    padding   : 0 1.11111111vh;
     position  : relative;
     text-align: right;
 }
@@ -518,17 +513,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     clear  : both;
 }
 
-.exp-btn,
 .exp-button {
     border         : none;
     display        : inline-block;
     padding        : 0.71174377vh 0.69444444444vw;
     overflow       : hidden;
     text-decoration: none;
-    color          : inherit;
+    color          : var(--white);
     text-align     : center;
     cursor         : pointer;
     white-space    : nowrap;
+
+    font-size: 3.125vh;
+    line-height:  3.61328125vh;
+    position: absolute;
+    bottom: -57px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -543,17 +544,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .loin_section .avater {
+    height: 81.25vh;
     position : absolute;
     top      : 50%;
     transform: translateY(-50%);
 }
 
 .loin_section .avater.rone {
-    left: 2.63888888vw;
+    right: 2.63888888vw;
 }
 
 .loin_section .avater.stwo {
-    right: 2.08333333vw;
+    left: 2.08333333vw;
 }
 
 .login_from {
@@ -608,6 +610,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-bottom: 1.3671875vh; 
     padding-left: 3.61111111vw; 
     padding-right: 1.66666666vw; 
+}
+.form_wrapper input:focus-visible {
+    outline: none;
 }
 .form_wrapper input.email {
     background-image: url(../icons/user.svg);
